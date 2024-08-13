@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body{
+    background-image: radial-gradient(circle at 84% 82%, rgba(217, 217, 217,0.03) 0%, rgba(217, 217, 217,0.03) 21%,transparent 21%, transparent 100%),radial-gradient(circle at 75% 56%, rgba(3, 3, 3,0.03) 0%, rgba(3, 3, 3,0.03) 30%,transparent 30%, transparent 100%),radial-gradient(circle at 74% 53%, rgba(153, 153, 153,0.03) 0%, rgba(153, 153, 153,0.03) 95%,transparent 95%, transparent 100%),radial-gradient(circle at 86% 43%, rgba(209, 209, 209,0.03) 0%, rgba(209, 209, 209,0.03) 83%,transparent 83%, transparent 100%),radial-gradient(circle at 64% 88%, rgba(192, 192, 192,0.03) 0%, rgba(192, 192, 192,0.03) 2%,transparent 2%, transparent 100%),radial-gradient(circle at 73% 77%, rgba(205, 205, 205,0.03) 0%, rgba(205, 205, 205,0.03) 18%,transparent 18%, transparent 100%),radial-gradient(circle at 57% 51%, rgba(161, 161, 161,0.03) 0%, rgba(161, 161, 161,0.03) 64%,transparent 64%, transparent 100%),radial-gradient(circle at 40% 84%, rgba(115, 115, 115,0.03) 0%, rgba(115, 115, 115,0.03) 14%,transparent 14%, transparent 100%),linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0));
+}
+.main{
+    
+    display: none;
+    width: auto;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+#content{
+    background-color: rgba(255, 255, 255, 0.75);
+    flex-wrap: wrap;
+    width: 370px;
+    padding: 25px;
+    border-radius: 11px;
+}
+#title{
+    color: #02367b;
+    font-size: 1.6rem;
+    font-family: cursive;
+}
+.form{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+#inputword{
+    width: 70%;
+    border: none;
+    outline: none;
+    padding: 5px;
+    background-color: transparent;
+    color: hsl(0, 0%, 20%);
+    font-size: 1rem;
+    border-bottom: 2.5px solid #02367b ;
+    padding-left: 5px;
+}
+
+button{
+    font-size: 1rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #02367b;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button:active{
+    background-color: hsl(214, 97%, 50%);
+    color: white;
+}
+.heading{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.heading h3{
+    color: #02367b;
+}
+.pos{
+    color: hsl(0, 0%, 55%);
+    font-size: 14px;
+}
+#icon{
+    color: hsl(0, 0%, 15%);
+    cursor: pointer;
+    display: none;
+}
+.meaning{
+    margin-top: 10px;
+    text-indent: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.example{
+    margin-top: 20px;
+   
+    padding-left: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    outline: none;
+    border-left: 3.5px solid #02367b;
+}
+
+#loader{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner {
+   width: 56px;
+   height: 56px;
+   border-radius: 50%;
+   background: radial-gradient(farthest-side,hsl(214, 97%, 50%) 94%,#0000) top/9px 9px no-repeat,
+          conic-gradient(#0000 30%, hsl(214, 97%, 50%));
+   -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 9px),#000 0);
+   animation: spinner 1s infinite linear;
+   
+
+}
+
+@keyframes spinner{
+   100% {
+      transform: rotate(1turn);
+   }
+}
+
+@media(max-width: 529px){
+
+    #content{
+        width: 345px;
+    }
+}
+
+@media(max-width: 481px){
+
+    #content{
+    width: 335px;
+    }
+}
+
+@media(max-width: 434px){
+
+    #content{
+        width: 325px;
+    }
+
+}
+
+@media(max-width: 415px){
+
+    #content{
+       width: 300px;
+    }
+}
+@media(max-width: 491px){
+
+    #content{
+       width: 290px;
+    }
+}
